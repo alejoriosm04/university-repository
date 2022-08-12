@@ -1,0 +1,39 @@
+Function: main/0
+Constants: None, "Valor de A: ", "Valor de B: ", "+", "="
+Locals: a, b, c
+Globals: print, input, int
+
+BEGIN
+    LOAD_GLOBAL     2
+    LOAD_GLOBAL     1
+    LOAD_CONST      1
+    CALL_FUNCTION   1
+    CALL_FUNCTION   1
+    STORE_FAST      0
+
+    LOAD_GLOBAL     2
+    LOAD_GLOBAL     1
+    LOAD_CONST      2
+    CALL_FUNCTION   1
+    CALL_FUNCTION   1
+    STORE_FAST      1
+
+    LOAD_FAST       0
+    LOAD_FAST       1
+    BINARY_ADD      
+    STORE_FAST      2
+
+    LOAD_GLOBAL     0
+    LOAD_FAST       0
+    LOAD_CONST      3
+    LOAD_FAST       1
+    LOAD_CONST      4
+    LOAD_FAST       2
+
+    CALL_FUNCTION   5
+
+    POP_TOP         
+    LOAD_CONST      0
+    RETURN_VALUE       
+
+END

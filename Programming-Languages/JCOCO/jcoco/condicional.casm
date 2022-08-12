@@ -1,0 +1,48 @@
+Function: leerNumero/1
+Constants: None
+Locals: texto
+Globals: int, input
+BEGIN
+  LOAD_GLOBAL           0  ;int
+    LOAD_GLOBAL           1 ;print
+      LOAD_FAST            0
+        CALL_FUNCTION        1
+      CALL_FUNCTION         1
+   RETURN_VALUE
+END
+
+Function: main/0
+Constants: None, "Ingrese dato A:", "Ingrese dato B:", "=", "<", "<=", ">", ">="
+Locals: a, b, opR
+Globals: print, leerNumero
+BEGIN
+   LOAD_GLOBAL  1 ;llamar funcion leerNumero
+     LOAD_CONST   1
+   CALL_FUNCTION   1
+   STORE_FAST     0 ;guarda a
+
+   LOAD_GLOBAL  1 ;llamar funcion leerNumero
+     LOAD_CONST   2
+   CALL_FUNCTION   1
+   STORE_FAST     1 ;guarda b
+
+comparacion:
+   LOAD_FAST     0 ;valor a
+   LOAD_FAST     1 ;valor b
+   COMPARE_OP    0 ;<=
+   STORE_FAST    2 ;opR
+      LOAD_GLOBAL   0
+         LOAD_FAST   0
+         LOAD_CONST  4 ;operador <
+         LOAD_FAST   1
+         LOAD_CONST  3 ;"="
+         LOAD_FAST   2
+      CALL_FUNCTION  5
+   
+   
+
+FinPrograma:
+    POP_TOP
+    LOAD_CONST   0
+    RETURN_VALUE
+END
