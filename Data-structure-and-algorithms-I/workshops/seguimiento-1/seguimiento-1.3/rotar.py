@@ -31,3 +31,31 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# Solution by Lina Ballesteros
+# def rotar(head: Node, k):
+#     if head == None:
+#         return head
+    
+#     longitud = 1
+#     temp = head
+
+#     while temp.next:
+#         temp = temp.next
+#         longitud += 1
+
+#     k = k % longitud
+
+#     if k == 0:
+#         return head
+
+#     actual = head
+#     for i in range(longitud - k - 1):
+#         actual = actual.next
+    
+#     nueva_cabeza = actual.next
+#     actual.next = None
+#     temp.next = head
+
+#     return nueva_cabeza
