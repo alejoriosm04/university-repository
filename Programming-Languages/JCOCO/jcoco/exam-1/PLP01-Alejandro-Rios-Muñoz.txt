@@ -1,0 +1,89 @@
+Grámatica
+<real>  --> <entero><fraccion>
+            <entero-con-signo><fraccion>
+            -<entero-sin-signo><fraccion>
+            -<digito><entero-sin-signo><fraccion>
+            -6<entero-sin-signo><fraccion>
+            -6<digito><entero-sin-signo><fraccion>
+            -63<entero-sin-signo><fraccion>
+            -63<digito><fraccion>
+            -632<fraccion>
+            -632.<entero-sin-signo>
+            -632.<digito><entero-sin-signo>
+            -632.4<entero-sin-signo>
+            -632.4<digito>
+            -632.45
+
+JCoCo
+Function: main/0
+Constants: None, "Ingrese k: ", "Ingrese n: ", 2, 1, "La suma total es: ", 0
+Locals: k, n, i, a, total, x
+Globals: int, input, print
+
+BEGIN
+    LOAD_GLOBAL             0
+    LOAD_GLOBAL             1
+    LOAD_CONST              1
+    CALL_FUNCTION           1
+    CALL_FUNCTION           1
+    STORE_FAST              0
+
+    LOAD_GLOBAL             0
+    LOAD_GLOBAL             1
+    LOAD_CONST              2
+    CALL_FUNCTION           1
+    CALL_FUNCTION           1
+    STORE_FAST              1
+
+    LOAD_CONST              4
+    STORE_FAST              2
+    LOAD_CONST              4
+    STORE_FAST              5
+    LOAD_CONST              3
+    STORE_FAST              3
+    LOAD_CONST              6
+    STORE_FAST              4
+
+    ; CHECKPOINT GOOD
+
+    LOAD_FAST               1
+    LOAD_CONST              4
+    COMPARE_OP              4
+    POP_JUMP_IF_FALSE       label02
+
+label00:
+    LOAD_FAST               1
+    LOAD_FAST               2
+    COMPARE_OP              0
+    POP_JUMP_IF_TRUE        label01
+    
+    LOAD_FAST               4
+    LOAD_FAST               3
+    LOAD_FAST               2
+    BINARY_MULTIPLY
+    BINARY_ADD
+    STORE_FAST              4
+
+    LOAD_FAST               4
+    LOAD_FAST               0
+    BINARY_ADD
+    STORE_FAST              4
+
+    LOAD_FAST               2
+    LOAD_FAST               5
+    BINARY_ADD
+    STORE_FAST              2
+
+    JUMP_FORWARD            label00
+
+label01:
+    LOAD_GLOBAL             2
+    LOAD_FAST               4
+    CALL_FUNCTION           1
+    JUMP_FORWARD            label02
+
+label02:
+    POP_TOP
+    LOAD_CONST              0
+    RETURN_VALUE
+END

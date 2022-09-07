@@ -1,0 +1,39 @@
+************************************************************
+* WARNING: disassembler.py should be run using Python 3.2  *
+*          You are running Python 3.1                      *
+*          The disassembly may not be correct.             *
+************************************************************
+Function: main/0
+Constants: None, "Ingrese el primer valor: ", "Ingrese el segundo valor: ", "a es mayor", "b es mayor"
+Locals: a, b
+Globals: int, input, print
+BEGIN
+          LOAD_GLOBAL                    0
+          LOAD_GLOBAL                    1
+          LOAD_CONST                     1
+          CALL_FUNCTION                  1
+          CALL_FUNCTION                  1
+          STORE_FAST                     0
+          LOAD_GLOBAL                    0
+          LOAD_GLOBAL                    1
+          LOAD_CONST                     2
+          CALL_FUNCTION                  1
+          CALL_FUNCTION                  1
+          STORE_FAST                     1
+          LOAD_FAST                      0
+          LOAD_FAST                      1
+          COMPARE_OP                     4
+          COMPARE_OP                     4
+          LOAD_GLOBAL                    2
+          LOAD_CONST                     3
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_CONST                     0
+          RETURN_VALUE             
+label00:  LOAD_GLOBAL                    2
+          LOAD_CONST                     4
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_CONST                     0
+          RETURN_VALUE             
+END

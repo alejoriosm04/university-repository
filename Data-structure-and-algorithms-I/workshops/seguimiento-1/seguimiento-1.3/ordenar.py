@@ -34,9 +34,9 @@ def sortedMerge(izquierda, derecha):
     if izquierda.fecha <= derecha.fecha:
         result = izquierda
         result.next = sortedMerge(izquierda.next, derecha)
-    elif (izquierda.fecha == derecha.fecha) and (izquierda.nombre < derecha.nombre):
-        result = izquierda
-        result.next = sortedMerge(izquierda.next, derecha)
+    # elif (izquierda.fecha == derecha.fecha) and (izquierda.nombre < derecha.nombre):
+    #     result = izquierda
+    #     result.next = sortedMerge(izquierda.next, derecha)
     else:
         result = derecha
         result.next = sortedMerge(izquierda, derecha.next)

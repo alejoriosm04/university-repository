@@ -1,0 +1,14 @@
+<real>  --> <entero><fraccion>
+            <entero-con-signo><fraccion>
+            -<entero-sin-signo><fraccion>
+            -<digito><entero-sin-signo><fraccion>
+            -6<entero-sin-signo><fraccion>
+            -6<digito><entero-sin-signo><fraccion>
+            -63<entero-sin-signo><fraccion>
+            -63<digito><fraccion>
+            -632<fraccion>
+            -632.<entero-sin-signo>
+            -632.<digito><entero-sin-signo>
+            -632.4<entero-sin-signo>
+            -632.4<digito>
+            -632.45

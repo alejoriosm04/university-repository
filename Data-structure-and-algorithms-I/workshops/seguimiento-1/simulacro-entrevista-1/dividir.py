@@ -22,7 +22,7 @@ def dividir_posicion_n(arr, length, n, i, izquierda, derecha):
 
 def dividir_cinco_tres(arr, length, i, cinco, tres):
     if length == i:
-        return cinco, tres
+        return cinco,tres
     elif arr[i] % 5 == 0:
         cinco.append(arr[i])
         return dividir_cinco_tres(arr, length, i+1, cinco, tres)
