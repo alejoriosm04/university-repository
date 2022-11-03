@@ -1,0 +1,26 @@
+SumaLista(lista_de_numeros)
+    contador = 0
+    Para cada **Item** en lista_de_numeros
+        contador = contador + Item
+
+    Retornar contador
+
+
+MayorLista(lista_de_numeros)
+    mayor_numero = primer_item_lista_de_numeros
+    Para cada **Item** en lista_de_numeros
+        Si item es mayor a mayor_numero
+            mayor_numero = Item
+
+    Retornar mayor_numero
+
+
+PromedioLista(lista_de_numeros)
+    numero_de_elementos = longitud_lista
+    suma_elementos = 0
+    Para cada **Item** en lista_de_numeros
+        suma_elementos = suma_elementos + Item
+
+    promedio = suma_elementos / numero_de_elementos
+
+    Retornar promedio

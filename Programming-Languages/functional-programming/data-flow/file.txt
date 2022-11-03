@@ -1,0 +1,3 @@
+Haskell es un lenguaje de programación estandarizado multi-propósito
+funcionalmente puro, con evaluación no estricta y memorizada
+y fuerte tipificación estática.

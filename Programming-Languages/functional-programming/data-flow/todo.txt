@@ -1,0 +1,1 @@
+Estudiar para el parcial de Haskell mañana 03/11/22
