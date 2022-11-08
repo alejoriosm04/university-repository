@@ -59,7 +59,7 @@ The program breaks if the input is invalid.
 
 - Clone the repo:
 
-        git clone 
+        git clone https://github.com/alejoriosm04/university-repository/tree/main/Programming-Languages/functional-programming/polish-notation-calculator
 
 ## Related projects
 
