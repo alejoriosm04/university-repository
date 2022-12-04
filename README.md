@@ -16,8 +16,8 @@ Mainly, you will find data related with programming courses. However, in some co
 
 ## Repository Structure
 
-    ├── CITATION.cff
-    ├── README.md               <- Details about the project.
+    ├── LICENSE
+    ├── README.md               <- Details about the repository.
     ├── .gitignore         
     │ 
     ├── first-semester
@@ -30,20 +30,10 @@ Mainly, you will find data related with programming courses. However, in some co
     │   ├── Programming-Languages
     │   ├── Calculus-II
     │   ├── Data-structure-and-algorithms-I
-    │   └── Discrete-Mathematics
-    │       
+    │   └── Discrete-Mathematics      
     │   
-    └── docs                    <- Folder to store all documentation of the project.
-        │
-        ├── reports
-        │   ├── delivery1     
-        │   ├── delivery2
-        │   └── final-delivery  <- Folder containing the final Report of this project.
-        │   
-        └── presentations
-            ├── delivery1     
-            ├── delivery2
-            └── final-delivery  <- Folder containing the final Presentation of this project.
+    └── others
+        └── Computational-Thinking-NFI
 --------
 
 ## Motivation
@@ -66,6 +56,5 @@ In this section, I want to thank to all my classmates that helped to me in this 
 - [.]()
 - [.]()
 - [.]()
-
 
 ## License
