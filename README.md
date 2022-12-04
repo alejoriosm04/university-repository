@@ -21,16 +21,16 @@ Mainly, you will find data related with programming courses. However, in some co
     ├── .gitignore         
     │ 
     ├── first-semester
+    │   ├── Calculus-I
+    │   ├── Logic 
     │   ├── Programming-Fundamentals
-    │   ├── Calculus-I 
-    │   ├── Software-Development-Principles
-    │   └── Logic
+    │   └── Software-Development-Principles
     │ 
     ├── second-semester
-    │   ├── Programming-Languages
     │   ├── Calculus-II
     │   ├── Data-structure-and-algorithms-I
-    │   └── Discrete-Mathematics      
+    │   ├── Discrete-Mathematics
+    │   └── Programming-Languages      
     │   
     └── others
         └── Computational-Thinking-NFI
