@@ -1,0 +1,4 @@
+Professor1: Pedro Vicente Esteban Duarte
+Professor2: Jhon Willington Bernal Vera
+Course: CM0230-Cálculo I
+Link Taking Note: https://alejoriosm04.notion.site/Unravel-Math-878425a37145453bba1ccae3da6f629a
