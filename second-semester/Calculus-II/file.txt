@@ -1,0 +1,4 @@
+Professor1: Pedro Vicente Esteban Duarte
+Professor2: Daniel Rojas
+Course: CM0231-Cálculo II
+Link Taking Note: https://alejoriosm04.notion.site/Unravel-Math-878425a37145453bba1ccae3da6f629a
