@@ -2,7 +2,7 @@
 
 In this repository, I want to share all my projects and workshops during the different courses of the [Computer Science Program](https://www.eafit.edu.co/pregrado-ingenieria-sistemas) taught at EAFIT University. On the same way, you will find some other repository projects in my [GitHub Profile](https://github.com/alejoriosm04).
 
-Mainly, you will find data related with programming courses. However, in some courses you will find my note taking in `Markdown`.
+Mainly, you will find data related with programming courses. However, in some courses you will find my note taking in `Markdown` or a link to my note taking in **Notion**.
 
 ## Contents
 - [Repository Structure](#repository-structure)
