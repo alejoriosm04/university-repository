@@ -1,5 +1,12 @@
+# Course folders
 second-semester/Data-structure-and-algorithms-I/ST0245-Eafit
 second-semester/Programming-Languages/st0244-pl
+
+# Project folders
+second-semester/Programming-Languages/cpp-oop/polish-notation-calculator
+second-semester/Programming-Languages/regex-validate-gui-userform
 second-semester/Data-structure-and-algorithms-I/ST0245
+
+# Other folders (Development Languages or Code Editors)
 __pycache__/
 venv/
