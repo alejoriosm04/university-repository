@@ -5,11 +5,12 @@ import random
 class Person():
 	def __init__(self):
 		self.name = giveName()
-		self.height = random.uniform(1.30, 2.10)
+		self.height = round(random.uniform(1.30, 2.10), 3)
+		self.weight = round(random.uniform(40.0, 180.0), 3)
+		self.age = round(random.uniform(18, 90), 0)
 
-
-def giveReal(bottomLimit, topLimit):
-	pass
+	def __str__(self):
+		return f'Persona:[{self.name}|{self.height} m|{self.weight} kg|{self.age} years old]'
 
 
 def giveName():
@@ -21,8 +22,7 @@ def giveName():
 
 def main():
     person1 = Person()
-    print(person1.name)
-    print(person1.height)
+    print(person1)
 
 
 if __name__ == '__main__':
