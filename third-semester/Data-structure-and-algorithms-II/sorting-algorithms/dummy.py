@@ -1,4 +1,5 @@
 from generator import *
+from sorting import *
 
 
 def createDummies(total):
@@ -22,6 +23,11 @@ def seeList(list):
 def main():
     data = createDummies(int(input('How many data?: ')))
     seeList(data)
+
+    print("="*20)
+
+    sortData = mergeSort(data)
+    seeList(sortData)
 
 
 if __name__ == '__main__':

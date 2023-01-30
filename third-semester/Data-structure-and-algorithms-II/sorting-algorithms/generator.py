@@ -12,6 +12,15 @@ class Person():
 	def __str__(self):
 		return f'Persona:[{self.name}|{self.height} m|{self.weight} kg|{self.age} years old]'
 
+	def __gt__(self, nextPerson):
+		return self.age > nextPerson.age
+
+	def __lt__(self, nextPerson):
+		return self.age < nextPerson.age
+
+	def __eq__(self, nextPerson):
+		return self.age == nextPerson.age
+
 
 def giveName():
 	name = random.choice(names)
@@ -22,7 +31,13 @@ def giveName():
 
 def main():
     person1 = Person()
-    print(person1)
+    person2 = Person()
+    if person1 > person2:
+        print("person1 > person2")
+    else:
+        print("person2 > person1")
+    print(f'Person1 -> {person1}')
+    print(f'Person2 -> {person2}')
 
 
 if __name__ == '__main__':
