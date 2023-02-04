@@ -17,22 +17,20 @@ Mainly, you will find data related with programming courses. However, in some co
 
     ├── LICENSE
     ├── README.md               <- Details about the repository.
-    ├── .gitignore         
-    │ 
     ├── first-semester
-    │   ├── Calculus-I
-    │   ├── Logic 
-    │   ├── Programming-Fundamentals
-    │   └── Software-Development-Principles
-    │ 
+    │   ├── Calculus-I
+    │   ├── Logic
+    │   ├── Programming-Fundamentals
+    │   └── Software-Development-Principles
+    ├── others
+    │   └── Computational-Thinking-NFI
     ├── second-semester
-    │   ├── Calculus-II
-    │   ├── Data-structure-and-algorithms-I
-    │   ├── Discrete-Mathematics
-    │   └── Programming-Languages      
-    │   
-    └── others
-        └── Computational-Thinking-NFI
+    │   ├── Calculus-II
+    │   ├── Data-structure-and-algorithms-I
+    │   ├── Discrete-Mathematics
+    │   └── Programming-Languages
+    └── third-semester
+        └── Data-structure-and-algorithms-II
 --------
 
 ## Motivation
