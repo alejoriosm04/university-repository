@@ -12,3 +12,4 @@ second-semester/Data-structure-and-algorithms-I/ST0245
 __pycache__/
 venv/
 sorting-algorithms-venv/
+logs/
