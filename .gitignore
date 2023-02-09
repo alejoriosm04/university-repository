@@ -11,3 +11,4 @@ second-semester/Data-structure-and-algorithms-I/ST0245
 # Other folders (Development Languages or Code Editors)
 __pycache__/
 venv/
+sorting-algorithms-venv/
