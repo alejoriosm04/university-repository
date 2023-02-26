@@ -40,25 +40,19 @@ def classification(list):
     return prediagnostico_patients, examenes_laboratorio_patients, tratamiento_patients, salida_patients
 
 
-def main():
-    data = createDummies(int(input('How many data?: ')))
-    prediagnostico_patients, examenes_laboratorio_patients, tratamiento_patients, salida_patients = classification(data)
+def quickSort(list):
+    if len(list) <= 1:
+        return list
+    else:
+        pivot = list.pop()
 
-    prediagnostico = Service("Prediagnóstico", prediagnostico_patients)
-    examenes_laboratorio = Service("Exámenes de Laboratorio", examenes_laboratorio_patients)
-    tratamiento = Service("Tratamiento", tratamiento_patients)
-    salida = Service("Salida", salida_patients)
+    items_greater = []
+    items_lower = []
 
-    prediagnostico.quickSortPatients()
-    examenes_laboratorio.quickSortPatients()
-    tratamiento.quickSortPatients()
-    salida.quickSortPatients()
+    for item in list:
+        if item > pivot:
+            items_greater.append(item)
+        else:
+            items_lower.append(item)
 
-    print("===" * 20)
-    print(prediagnostico)
-
-    seeList(data)
-
-
-if __name__ == '__main__':
-    main()
+    return quickSort(items_lower) + [pivot] + quickSort(items_greater)

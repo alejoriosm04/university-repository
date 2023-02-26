@@ -4,25 +4,27 @@ class Service():
         self.patients = patients
         self.total_time = 0
         for patient in patients:
-            self.total_time += patient.total_time
-        self.average_time = self.total_time / len(self.patients)
+            if self.name == "Prediagnóstico":
+                self.total_time += patient.time1
+            elif self.name == "Exámenes de Laboratorio":
+                self.total_time += patient.time2
+            elif self.name == "Tratamiento":
+                self.total_time += patient.time3
+            elif self.name == "Salida":
+                self.total_time += patient.time4
+        try:
+            self.average_time = round(self.total_time / len(self.patients), 2)
+        except ZeroDivisionError:
+            self.average_time = 0
 
     def __str__(self):
-        return f'{self.name}:\n\tPacientes: {self.patients}\n\tTiempo total: {self.total_time} minutos\n\tTiempo promedio: {self.average_time} minutos'
+        return f'{self.name}:\n\tPersonas en Total y Tiempo Total: {len(self.patients)+1} Personas atendidas en {self.total_time} minutos\n\tTiempo promedio: {self.average_time} minutos'
 
-    def quickSortPatients(self):
-        if len(self.patients) <= 1:
-            return self.patients
-        else:
-            pivot = self.patients.pop()
-
-        items_greater = []
-        items_lower = []
-
-        for item in self.patients:
-            if item.total_time > pivot.total_time:
-                items_greater.append(item)
-            else:
-                items_lower.append(item)
-
-        return Service.quickSortPatients(items_lower) + [pivot] + Service.quickSortPatients(items_greater)
+    def __gt__(self, nextService):
+        return self.average_time > nextService.average_time
+    
+    def __lt__(self, nextService):
+        return self.average_time < nextService.average_time
+    
+    def __eq__(self, nextService):
+        return self.average_time == nextService.average_time
