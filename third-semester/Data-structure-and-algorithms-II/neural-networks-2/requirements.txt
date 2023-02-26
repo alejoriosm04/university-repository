@@ -27,7 +27,7 @@ gitdb==4.0.10
 GitPython==3.1.30
 idna==3.4
 ipykernel==6.20.2
-ipython==8.8.0
+ipython==8.10.0
 ipython-genutils==0.2.0
 isoduration==20.11.0
 jedi==0.18.2
