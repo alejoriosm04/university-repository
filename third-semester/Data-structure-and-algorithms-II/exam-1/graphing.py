@@ -59,6 +59,8 @@ def graphingServices(services):
     plt.subplots_adjust(wspace=0.4, hspace=0.9)
 
     plt.show()
+    plt.savefig('services.png')
+    plt.close()
 
 
 def graphingNeuralNetwork(historial):
@@ -67,3 +69,5 @@ def graphingNeuralNetwork(historial):
     plt.ylabel("Magnitude of loss")
     plt.plot(historial.history["loss"])
     plt.show()
+    plt.savefig('neural-network.png')
+    plt.close()
