@@ -51,6 +51,55 @@ public class DivideAndConquerMatrixMultiplication {
         }
     }
 
+
+    public static int[][] multiplyStrassen(int[][] A, int[][] B) {
+        int n = A.length;
+
+        if (n == 1) {
+            int[][] C = new int[1][1];
+            C[0][0] = A[0][0] * B[0][0];
+            return C;
+        } else {
+            int[][] A11 = new int[n/2][n/2]; int[][] A12 = new int[n/2][n/2];
+            int[][] A21 = new int[n/2][n/2]; int[][] A22 = new int[n/2][n/2];            
+            int[][] B11 = new int[n/2][n/2]; int[][] B12 = new int[n/2][n/2];
+            int[][] B21 = new int[n/2][n/2]; int[][] B22 = new int[n/2][n/2];
+            
+            split(A, A11, A12, A21, A22);
+            split(B, B11, B12, B21, B22);
+
+            int[][] S01 = add(A11, A22);
+            int[][] S02 = add(B11, B22);
+            int[][] S03 = add(A21, A22);
+            int[][] S04 = subtract(B12, B22);
+            int[][] S05 = subtract(B21, B11);
+            int[][] S06 = add(A11, A12);
+            int[][] S07 = subtract(A21, A11);
+            int[][] S08 = add(B11, B12);
+            int[][] S09 = subtract(A12, A22);
+            int[][] S010 = add(B21, B22);
+            
+            int[][] M01 = multiplyStrassen(S01, S02);
+            int[][] M02 = multiplyStrassen(S03, B11);
+            int[][] M03 = multiplyStrassen(A11, S04);
+            int[][] M04 = multiplyStrassen(A22, S05);
+            int[][] M05 = multiplyStrassen(S06, B22);
+            int[][] M06 = multiplyStrassen(S07, S08);
+            int[][] M07 = multiplyStrassen(S09, S010);
+                    
+            int[][] C11 = subtract(add(add(M01, M04), M07), M05);
+            int[][] C12 = add(M03, M05);
+            int[][] C21 = add(M02, M04);
+            int[][] C22 = subtract(add(add(M03, M06), M01), M02);
+                    
+            int[][] C = new int[n][n];
+            join(C11, C12, C21, C22, C);
+
+            return C;
+        }
+    }
+
+
     /**
      * Return the matrix resulting from A - B
      * @param A First matrix
@@ -165,8 +214,10 @@ public class DivideAndConquerMatrixMultiplication {
         int[][] B = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {1, 1, 1, 1}};
 
         int[][] C = multiply(A, B);
+        int[][] D = multiplyStrassen(A, B);
 
         System.out.println(Arrays.deepToString(C));
+        System.out.println(Arrays.deepToString(D));
         
         int [][] d = normalMultiplication(A, B);
         System.out.println(Arrays.deepToString(d));
