@@ -152,7 +152,7 @@ def graphing():
     t2_multiplyDivideConquer = []
     t3_multiplyStrassen = []
 
-    n = 2
+    n = 1
     for n in range(10):
         # Create matrices of size 2^n with random numbers from 1 to 10
         A = [[random.randint(1, 10) for i in range(2**n)] for j in range(2**n)]
@@ -187,8 +187,8 @@ def graphing():
     plt.title('Matrix multiplication algorithms')
     plt.legend()
     plt.savefig('divide-conquer.png')
-    plt.close()
     plt.show()
+    plt.close()
 
 
 def main():
