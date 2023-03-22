@@ -16,3 +16,8 @@ logs/
 neural-networks-venv/
 exam-1-eda2-venv
 challenge-class-venv
+build/
+nbproject/
+test/
+build.xml
+manifest.mf
