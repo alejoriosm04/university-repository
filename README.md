@@ -30,7 +30,8 @@ Mainly, you will find data related with programming courses. However, in some co
     │   ├── Discrete-Mathematics
     │   └── Programming-Languages
     └── third-semester
-        └── Data-structure-and-algorithms-II
+        ├── Data-structure-and-algorithms-II
+        └── Digital-Electronics
 --------
 
 ## Motivation
