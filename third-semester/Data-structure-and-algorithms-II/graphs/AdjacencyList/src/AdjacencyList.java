@@ -26,14 +26,26 @@ public class AdjacencyList {
         try {
             Scanner in = new Scanner(new File(filename));
             // Read number of vertices and number of edges
+            V = in.nextInt();
+            E = in.nextInt();
             
             // Define the array lists of size V + 1
             // (from 0 to V)
             graph = new LinkedList[V+1];
             
             // Initialize each array position as a reference to an emtpy list
+            for(int i = 1; i <= V; i++) {
+                graph[i] = new LinkedList<Edge>();
+            }
             
             // Read each edge from the file (there are E edges) and add it
+            // to the adjacency list
+            for(int i = 0; i < E; i++) {
+                int u = in.nextInt();
+                int v = in.nextInt();
+                Edge e = new Edge(v);
+                addEdge(u, e);
+            }
             
         } catch (IOException e) {
             System.out.println("Could not open file " + filename);
@@ -47,7 +59,7 @@ public class AdjacencyList {
      * @param v destination of the edge
      */
     public void addEdge(int u, Edge e) {
-        
+        graph[u].add(e);
     }
     
     /**
@@ -56,7 +68,15 @@ public class AdjacencyList {
      * @return the string that can be printed
      */
     public String toString() {
-        return "";
+        String s = "Number of vertices: " + V + "  Number of edges: " + E + "\n";
+        for(int i = 1; i <= V; i++) {
+            s += "Vertex " + i + ": ";
+            for(Edge e : graph[i]) {
+                s += e.to + " ";
+            }
+            s += "\n";
+        }
+        return s;
     }
     
     /**
