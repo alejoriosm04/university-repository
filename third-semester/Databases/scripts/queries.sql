@@ -16,3 +16,32 @@ SELECT
   profe AS teacher,
   n_calificaciones AS n_reviews
 FROM cursos;
+
+-- Calculate the average of grades for each student
+SELECT student_id, AVG(grade) AS average_grade
+FROM grades
+GROUP BY student_id;
+
+-- Calculate total average grade
+SELECT AVG(grade) AS total_average_grade
+FROM grades;
+
+-- Mostrar el promedio pagado por cada cliente en cada renta
+SELECT customer_id, AVG(amount) AS "Promedio Pagado"
+FROM payment
+GROUP BY customer_id;
+
+SELECT customer_id, rental_id, AVG(amount) AS "Promedio"
+FROM payment
+GROUP BY rental_id
+HAVING Promedio > 2
+ORDER BY customer_id, rental_id;
+
+
+SELECT rental_id, AVG(amount) AS average_amount
+FROM payment
+GROUP BY rental_id;
+
+SELECT * FROM payment
+WHERE customer_id = 1
+ORDER BY customer_id;
