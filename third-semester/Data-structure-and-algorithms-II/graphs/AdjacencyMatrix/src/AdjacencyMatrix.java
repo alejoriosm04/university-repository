@@ -30,14 +30,27 @@ public class AdjacencyMatrix {
         try {
             Scanner in = new Scanner(new File(filename));
             // Read number of vertices and number of edges
+            V = in.nextInt();
+            E = in.nextInt();
             
             // Define matrix of Edges of size V x V
             graph = new Edge[V+1][V+1];
             
             // Initialize each array position as null
+            for(int i = 1; i <= V; i++) {
+                for(int j = 1; j <= V; j++) {
+                    graph[i][j] = null;
+                }
+            }
             
             // Read each edge from the file (there are E edges) and add it
             // to the adjacency matrix
+            for(int i = 0; i < E; i++) {
+                int u = in.nextInt();
+                int v = in.nextInt();
+                Edge e = new Edge(v, 0);
+                addEdge(u, e);
+            }
             
         } catch (IOException e) {
             System.out.println("Could not open file " + filename);
@@ -51,7 +64,7 @@ public class AdjacencyMatrix {
      * @param v destination of the edge
      */
     public void addEdge(int u, Edge e) {
-        
+        graph[u][e.to] = e;
     }
     
     /**
@@ -60,7 +73,19 @@ public class AdjacencyMatrix {
      * @return the string that can be printed
      */
     public String toString() {
-        return "";
+        String s = "Number of vertices: " + V + " Number of edges " + E + "\n";
+        for(int i = 1; i <= V; i++) {
+            s += i + ": ";
+            for(int j = 1; j <= V; j++) {
+                if(graph[i][j] != null) {
+                    s += "1" + " ";
+                } else {
+                    s += "0" + " ";
+                }
+            }
+            s += "\n";
+        }
+        return s;
     }
     
     /**
