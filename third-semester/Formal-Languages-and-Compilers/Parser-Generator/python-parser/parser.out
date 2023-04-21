@@ -1,0 +1,224 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> expresion
+Rule 1     expresion -> NOT expresion
+Rule 2     expresion -> expresion AND expresion
+Rule 3     expresion -> expresion OR expresion
+Rule 4     expresion -> PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO
+Rule 5     expresion -> TRUE
+Rule 6     expresion -> FALSE
+
+Terminals, with rules where they appear
+
+AND                  : 2
+FALSE                : 6
+NOT                  : 1
+OR                   : 3
+PARENTESIS_DERECHO   : 4
+PARENTESIS_IZQUIERDO : 4
+TRUE                 : 5
+error                : 
+
+Nonterminals, with rules where they appear
+
+expresion            : 1 2 2 3 3 4 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . expresion
+    (1) expresion -> . NOT expresion
+    (2) expresion -> . expresion AND expresion
+    (3) expresion -> . expresion OR expresion
+    (4) expresion -> . PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO
+    (5) expresion -> . TRUE
+    (6) expresion -> . FALSE
+
+    NOT             shift and go to state 2
+    PARENTESIS_IZQUIERDO shift and go to state 3
+    TRUE            shift and go to state 4
+    FALSE           shift and go to state 5
+
+    expresion                      shift and go to state 1
+
+state 1
+
+    (0) S' -> expresion .
+    (2) expresion -> expresion . AND expresion
+    (3) expresion -> expresion . OR expresion
+
+    AND             shift and go to state 6
+    OR              shift and go to state 7
+
+
+state 2
+
+    (1) expresion -> NOT . expresion
+    (1) expresion -> . NOT expresion
+    (2) expresion -> . expresion AND expresion
+    (3) expresion -> . expresion OR expresion
+    (4) expresion -> . PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO
+    (5) expresion -> . TRUE
+    (6) expresion -> . FALSE
+
+    NOT             shift and go to state 2
+    PARENTESIS_IZQUIERDO shift and go to state 3
+    TRUE            shift and go to state 4
+    FALSE           shift and go to state 5
+
+    expresion                      shift and go to state 8
+
+state 3
+
+    (4) expresion -> PARENTESIS_IZQUIERDO . expresion PARENTESIS_DERECHO
+    (1) expresion -> . NOT expresion
+    (2) expresion -> . expresion AND expresion
+    (3) expresion -> . expresion OR expresion
+    (4) expresion -> . PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO
+    (5) expresion -> . TRUE
+    (6) expresion -> . FALSE
+
+    NOT             shift and go to state 2
+    PARENTESIS_IZQUIERDO shift and go to state 3
+    TRUE            shift and go to state 4
+    FALSE           shift and go to state 5
+
+    expresion                      shift and go to state 9
+
+state 4
+
+    (5) expresion -> TRUE .
+
+    AND             reduce using rule 5 (expresion -> TRUE .)
+    OR              reduce using rule 5 (expresion -> TRUE .)
+    $end            reduce using rule 5 (expresion -> TRUE .)
+    PARENTESIS_DERECHO reduce using rule 5 (expresion -> TRUE .)
+
+
+state 5
+
+    (6) expresion -> FALSE .
+
+    AND             reduce using rule 6 (expresion -> FALSE .)
+    OR              reduce using rule 6 (expresion -> FALSE .)
+    $end            reduce using rule 6 (expresion -> FALSE .)
+    PARENTESIS_DERECHO reduce using rule 6 (expresion -> FALSE .)
+
+
+state 6
+
+    (2) expresion -> expresion AND . expresion
+    (1) expresion -> . NOT expresion
+    (2) expresion -> . expresion AND expresion
+    (3) expresion -> . expresion OR expresion
+    (4) expresion -> . PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO
+    (5) expresion -> . TRUE
+    (6) expresion -> . FALSE
+
+    NOT             shift and go to state 2
+    PARENTESIS_IZQUIERDO shift and go to state 3
+    TRUE            shift and go to state 4
+    FALSE           shift and go to state 5
+
+    expresion                      shift and go to state 10
+
+state 7
+
+    (3) expresion -> expresion OR . expresion
+    (1) expresion -> . NOT expresion
+    (2) expresion -> . expresion AND expresion
+    (3) expresion -> . expresion OR expresion
+    (4) expresion -> . PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO
+    (5) expresion -> . TRUE
+    (6) expresion -> . FALSE
+
+    NOT             shift and go to state 2
+    PARENTESIS_IZQUIERDO shift and go to state 3
+    TRUE            shift and go to state 4
+    FALSE           shift and go to state 5
+
+    expresion                      shift and go to state 11
+
+state 8
+
+    (1) expresion -> NOT expresion .
+    (2) expresion -> expresion . AND expresion
+    (3) expresion -> expresion . OR expresion
+
+  ! shift/reduce conflict for AND resolved as shift
+  ! shift/reduce conflict for OR resolved as shift
+    $end            reduce using rule 1 (expresion -> NOT expresion .)
+    PARENTESIS_DERECHO reduce using rule 1 (expresion -> NOT expresion .)
+    AND             shift and go to state 6
+    OR              shift and go to state 7
+
+  ! AND             [ reduce using rule 1 (expresion -> NOT expresion .) ]
+  ! OR              [ reduce using rule 1 (expresion -> NOT expresion .) ]
+
+
+state 9
+
+    (4) expresion -> PARENTESIS_IZQUIERDO expresion . PARENTESIS_DERECHO
+    (2) expresion -> expresion . AND expresion
+    (3) expresion -> expresion . OR expresion
+
+    PARENTESIS_DERECHO shift and go to state 12
+    AND             shift and go to state 6
+    OR              shift and go to state 7
+
+
+state 10
+
+    (2) expresion -> expresion AND expresion .
+    (2) expresion -> expresion . AND expresion
+    (3) expresion -> expresion . OR expresion
+
+  ! shift/reduce conflict for AND resolved as shift
+  ! shift/reduce conflict for OR resolved as shift
+    $end            reduce using rule 2 (expresion -> expresion AND expresion .)
+    PARENTESIS_DERECHO reduce using rule 2 (expresion -> expresion AND expresion .)
+    AND             shift and go to state 6
+    OR              shift and go to state 7
+
+  ! AND             [ reduce using rule 2 (expresion -> expresion AND expresion .) ]
+  ! OR              [ reduce using rule 2 (expresion -> expresion AND expresion .) ]
+
+
+state 11
+
+    (3) expresion -> expresion OR expresion .
+    (2) expresion -> expresion . AND expresion
+    (3) expresion -> expresion . OR expresion
+
+  ! shift/reduce conflict for AND resolved as shift
+  ! shift/reduce conflict for OR resolved as shift
+    $end            reduce using rule 3 (expresion -> expresion OR expresion .)
+    PARENTESIS_DERECHO reduce using rule 3 (expresion -> expresion OR expresion .)
+    AND             shift and go to state 6
+    OR              shift and go to state 7
+
+  ! AND             [ reduce using rule 3 (expresion -> expresion OR expresion .) ]
+  ! OR              [ reduce using rule 3 (expresion -> expresion OR expresion .) ]
+
+
+state 12
+
+    (4) expresion -> PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO .
+
+    AND             reduce using rule 4 (expresion -> PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO .)
+    OR              reduce using rule 4 (expresion -> PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO .)
+    $end            reduce using rule 4 (expresion -> PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO .)
+    PARENTESIS_DERECHO reduce using rule 4 (expresion -> PARENTESIS_IZQUIERDO expresion PARENTESIS_DERECHO .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for AND in state 8 resolved as shift
+WARNING: shift/reduce conflict for OR in state 8 resolved as shift
+WARNING: shift/reduce conflict for AND in state 10 resolved as shift
+WARNING: shift/reduce conflict for OR in state 10 resolved as shift
+WARNING: shift/reduce conflict for AND in state 11 resolved as shift
+WARNING: shift/reduce conflict for OR in state 11 resolved as shift
