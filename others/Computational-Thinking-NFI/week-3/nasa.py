@@ -1,0 +1,8 @@
+print("Iniciando el ataque en 3, 2, 1...")
+print("Hackeando la NASA 0%")
+print("Hackeando la NASA 20%")
+print("Hackeando la NASA 40%")
+print("Hackeando la NASA 60%")
+print("Hackeando la NASA 80%")
+print("Hackeando la NASA 100%")
+print("La NASA ha sido Hackeada de manera EXITOSA")
