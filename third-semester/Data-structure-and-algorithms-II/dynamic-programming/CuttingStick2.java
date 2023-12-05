@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class CuttingStick {
+public class CuttingStick2 {
     public static int cortarVarilla(int tamañoVarilla, int[] listaPrecios) {
         int[] tabla = new int[tamañoVarilla + 1];
         int[] cortes = new int[tamañoVarilla + 1];
@@ -41,7 +41,7 @@ public class CuttingStick {
 
     public static void main(String[] args) {
         int[] lista = {0, 1, 5, 8, 9, 10, 12, 13, 15, 18};
-        int resultado = cortarVarilla(9, lista);
+        int resultado = cortarVarilla(4, lista);
         System.out.println("Mejor valor obtenido: " + resultado);
     }
 }
