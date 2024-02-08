@@ -74,4 +74,4 @@ I want to thank to all my classmates that helped to me in this process. Many of 
 
 This software project is licensed under the GNU General Public License v3.0.
 
-Copyright (c) 2022, Alejandro Ríos-Muñoz.
+Copyright (c) 2024, Alejandro Ríos-Muñoz.
