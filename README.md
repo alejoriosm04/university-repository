@@ -34,7 +34,9 @@ Mainly, you will find data related with programming courses. However, in some co
     │   ├── Linear-Algebra
     │   └── Switching-Theory
     ├── 6-semester
-    │   └── Numerical-Analysis
+    │   ├── Computer-Organization
+    │   ├── Numerical-Analysis
+    │   └── Special-Topics-in-Sofware-Engineering
     └── others
         └── Computational-Thinking-NFI
 --------
