@@ -1,0 +1,71 @@
+2023.05.08 12:16:49 INFO  Started: Metals version 0.11.12 in workspace '/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall' for client Visual Studio Code 1.77.3.
+May 08, 2023 12:16:49 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 08, 2023 12:16:49 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 08, 2023 12:16:49 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 08, 2023 12:16:50 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/.metals/metals (H2 2.1)
+May 08, 2023 12:16:50 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+May 08, 2023 12:16:50 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.006s)
+May 08, 2023 12:16:50 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+May 08, 2023 12:16:50 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+May 08, 2023 12:16:50 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+May 08, 2023 12:16:50 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+May 08, 2023 12:16:50 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+May 08, 2023 12:16:50 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+May 08, 2023 12:16:50 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.037s)
+2023.05.08 12:16:50 INFO  time: initialize in 0.38s
+2023.05.08 12:16:51 WARN  Build server is not auto-connectable.
+2023.05.08 12:16:51 WARN  no build tool detected in workspace '/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.05.08 12:16:51 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/FloydWarshall.java
+2023.05.08 12:16:51 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/Main.java
+2023.05.08 12:16:51 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/FloydWarshall/Main.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/Main.java:12: error: cannot find symbol
+        FloydWarshall fw = new FloydWarshall("graph.txt");
+        ^
+  symbol:   class FloydWarshall
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/Main.java:12: error: cannot find symbol
+        FloydWarshall fw = new FloydWarshall("graph.txt");
+                               ^
+  symbol:   class FloydWarshall
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/Main.java:10: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Main {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/Main.java:10: error: semanticdb-javac: unknown flag 'II/FloydWarshall'
+public class Main {
+^
+4 errors
+2023.05.08 12:16:52 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/FloydWarshall/FloydWarshall.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/FloydWarshall.java:20: error: cannot find symbol
+        AdjacencyMatrix am = new AdjacencyMatrix(fileName);
+        ^
+  symbol:   class AdjacencyMatrix
+  location: class FloydWarshall
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/FloydWarshall.java:20: error: cannot find symbol
+        AdjacencyMatrix am = new AdjacencyMatrix(fileName);
+                                 ^
+  symbol:   class AdjacencyMatrix
+  location: class FloydWarshall
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/FloydWarshall.java:13: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class FloydWarshall {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/FloydWarshall/FloydWarshall.java:13: error: semanticdb-javac: unknown flag 'II/FloydWarshall'
+public class FloydWarshall {
+^
+4 errors
+2023.05.08 12:17:36 INFO  Shutting down server
+2023.05.08 12:17:36 INFO  shutting down Metals
+2023.05.08 12:17:36 INFO  Exiting server

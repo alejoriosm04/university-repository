@@ -17,23 +17,24 @@ Mainly, you will find data related with programming courses. However, in some co
 
     ├── LICENSE
     ├── README.md               <- Details about the repository.
-    ├── first-semester
+    ├── 1-semester
     │   ├── Calculus-I
-    │   ├── Logic
     │   ├── Programming-Fundamentals
     │   └── Software-Development-Principles
-    ├── others
-    │   └── Computational-Thinking-NFI
-    ├── second-semester
+    ├── 2-semester
     │   ├── Calculus-II
     │   ├── Data-structure-and-algorithms-I
-    │   ├── Discrete-Mathematics
     │   └── Programming-Languages
-    └── third-semester
-        ├── Data-structure-and-algorithms-II
-        ├── Databases
-        ├── Digital-Electronics
-        └── Formal-Languages-and-Compilers
+    ├── 3-semester
+    │   ├── Data-structure-and-algorithms-II
+    │   ├── Databases
+    │   ├── Digital-Electronics
+    │   └── Formal-Languages-and-Compilers
+    ├── 4-semester
+    │   ├── Linear-Algebra
+    │   └── Switching-Theory
+    └── 6-semester
+        └── Numerical-Analysis
 --------
 
 ## Motivation

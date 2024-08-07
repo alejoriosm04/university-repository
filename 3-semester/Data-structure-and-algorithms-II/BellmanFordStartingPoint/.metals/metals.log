@@ -1,0 +1,1124 @@
+2023.05.01 14:54:40 INFO  Started: Metals version 0.11.12 in workspace '/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint' for client Visual Studio Code 1.77.3.
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/.metals/metals (H2 2.1)
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.007s)
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+May 01, 2023 2:54:40 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.041s)
+2023.05.01 14:54:41 INFO  time: initialize in 0.44s
+2023.05.01 14:54:42 WARN  Build server is not auto-connectable.
+2023.05.01 14:54:42 WARN  no build tool detected in workspace '/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.05.01 14:54:42 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java
+2023.05.01 14:54:42 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Vertex.java
+2023.05.01 14:54:42 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Edge.java
+2023.05.01 14:54:42 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:54:42 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Vertex.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Vertex.java:7: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Vertex {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Vertex.java:7: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+public class Vertex {
+^
+2 errors
+2023.05.01 14:54:43 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Main.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:14: error: cannot find symbol
+        Graph graph = new Graph("graph.txt");
+        ^
+  symbol:   class Graph
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:14: error: cannot find symbol
+        Graph graph = new Graph("graph.txt");
+                          ^
+  symbol:   class Graph
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:7: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Main {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:7: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+public class Main {
+^
+4 errors
+2023.05.01 14:54:43 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Edge.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Edge.java:10: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Edge {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Edge.java:10: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+public class Edge {
+^
+2 errors
+2023.05.01 14:54:43 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge [] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex [] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:73: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:83: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:90: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V+1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:74: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:75: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:84: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:85: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+2023.05.01 14:55:09 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:09 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge [] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex [] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:73: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:83: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:90: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V+1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:74: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:75: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:84: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:85: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+2023.05.01 14:55:10 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:11 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge [] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex [] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:74: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:84: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:91: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V+1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:75: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:76: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:85: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:86: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+2023.05.01 14:55:12 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:13 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge [] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex [] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:78: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:88: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:95: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V+1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:79: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:80: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:89: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:90: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+2023.05.01 14:55:14 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:14 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge [] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex [] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:80: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:90: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:97: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V+1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:81: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:82: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:91: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:92: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+2023.05.01 14:55:16 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:16 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge [] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex [] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:84: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:94: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:101: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V+1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:85: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:86: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:95: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:96: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+2023.05.01 14:55:18 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:18 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge [] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex [] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:86: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:96: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:103: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V+1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:87: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:88: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:97: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:98: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+2023.05.01 14:55:20 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:22 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:22 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge [] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex [] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:85: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:95: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:102: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V+1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:86: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:87: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:96: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:97: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+May 01, 2023 2:55:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 86
+2023.05.01 14:55:29 WARN  Using indexes to guess the definition of initialize
+2023.05.01 14:55:34 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:34 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge [] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex [] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:73: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:83: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:90: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V+1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:74: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:75: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:84: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:85: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+2023.05.01 14:55:34 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:46 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:46 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:57: error: illegal start of expression
+    public String distances() {
+    ^
+1 error
+2023.05.01 14:55:50 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:55:50 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge [] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex [] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:82: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:92: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:99: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V+1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:83: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:84: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:93: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:94: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+2023.05.01 14:55:51 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+May 01, 2023 2:56:29 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.05.01 14:56:43 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java
+2023.05.01 14:56:44 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Main.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:12: error: cannot find symbol
+        Graph graph = new Graph("graph.txt");
+        ^
+  symbol:   class Graph
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:12: error: cannot find symbol
+        Graph graph = new Graph("graph.txt");
+                          ^
+  symbol:   class Graph
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:5: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Main {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:5: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+public class Main {
+^
+4 errors
+2023.05.01 14:56:46 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java
+2023.05.01 14:56:46 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Main.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:12: error: cannot find symbol
+        Graph graph = new Graph("graph.txt");
+        ^
+  symbol:   class Graph
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:12: error: cannot find symbol
+        Graph graph = new Graph("graph.txt");
+                          ^
+  symbol:   class Graph
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:5: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Main {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:5: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+public class Main {
+^
+4 errors
+2023.05.01 14:56:50 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Vertex.java
+2023.05.01 14:56:50 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Vertex.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Vertex.java:6: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Vertex {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Vertex.java:6: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+public class Vertex {
+^
+2 errors
+2023.05.01 14:56:53 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java
+2023.05.01 14:56:54 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Graph.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:13: error: cannot find symbol
+    Edge[] edges;
+    ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:14: error: cannot find symbol
+    Vertex[] vertices;
+    ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:82: error: cannot find symbol
+    void relax(Edge e) {
+               ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:92: error: cannot find symbol
+    boolean edgeFormsNegativeCycle(Edge e) {
+                                   ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:99: error: cannot find symbol
+    void addEdge(Edge e) {
+                 ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:26: error: cannot find symbol
+            edges = new Edge[E];
+                        ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:27: error: cannot find symbol
+            vertices = new Vertex[V + 1];
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:36: error: cannot find symbol
+                Edge e = new Edge(u, v, w);
+                             ^
+  symbol:   class Edge
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+            ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:48: error: cannot find symbol
+            Vertex v = new Vertex(i, Integer.MAX_VALUE, null);
+                           ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:83: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:84: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:93: error: cannot find symbol
+        Vertex u = vertices[e.u];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:94: error: cannot find symbol
+        Vertex v = vertices[e.v];
+        ^
+  symbol:   class Vertex
+  location: class Graph
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Graph.java:1: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+import java.io.File;
+^
+17 errors
+2023.05.01 14:56:56 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Edge.java
+2023.05.01 14:56:56 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Edge.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Edge.java:10: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Edge {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Edge.java:10: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+public class Edge {
+^
+2 errors
+2023.05.01 14:57:13 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java
+2023.05.01 14:57:13 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Main.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:10: error: reached end of file while parsing
+    public static void main(String[] args) {
+                                            ^
+1 error
+2023.05.01 14:57:21 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java
+2023.05.01 14:57:21 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Main.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:10: error: reached end of file while parsing
+    public static void main(String[] args) {
+                                            ^
+1 error
+2023.05.01 14:57:22 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java
+2023.05.01 14:57:23 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Main.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:10: error: reached end of file while parsing
+    public static void main(String[] args) {
+                                            ^
+1 error
+2023.05.01 14:57:25 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java
+2023.05.01 14:57:25 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Main.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:20: error: reached end of file while parsing
+    }
+     ^
+1 error
+2023.05.01 14:57:30 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java
+2023.05.01 14:57:31 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/BellmanFordStartingPoint/Main.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:12: error: cannot find symbol
+        Graph graph = new Graph("graph.txt");
+        ^
+  symbol:   class Graph
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:12: error: cannot find symbol
+        Graph graph = new Graph("graph.txt");
+                          ^
+  symbol:   class Graph
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:5: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Main {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java:5: error: semanticdb-javac: unknown flag 'II/BellmanFordStartingPoint'
+public class Main {
+^
+4 errors
+2023.05.01 14:57:36 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/BellmanFordStartingPoint/Main.java
+May 01, 2023 2:58:09 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 01, 2023 2:58:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 01, 2023 2:58:28 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 01, 2023 2:58:29 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 01, 2023 2:58:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 01, 2023 2:58:34 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 01, 2023 2:58:38 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 01, 2023 2:58:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.05.01 14:59:17 INFO  Shutting down server
+2023.05.01 14:59:17 INFO  shutting down Metals
+2023.05.01 14:59:17 INFO  Exiting server

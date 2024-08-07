@@ -1,0 +1,242 @@
+2023.05.08 12:08:59 INFO  Started: Metals version 0.11.12 in workspace '/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra' for client Visual Studio Code 1.77.3.
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/.metals/metals (H2 2.1)
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+May 08, 2023 12:08:59 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.028s)
+2023.05.08 12:08:59 INFO  time: initialize in 0.37s
+2023.05.08 12:09:00 WARN  Build server is not auto-connectable.
+2023.05.08 12:09:00 WARN  no build tool detected in workspace '/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.05.08 12:09:00 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java
+2023.05.08 12:09:00 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Main.java
+2023.05.08 12:09:01 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/Dijkstra/Dijkstra.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:18: error: cannot find symbol
+    LinkedList<Edge>[] graph;       // Graph
+               ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:21: error: cannot find symbol
+    ArrayList<Vertex> q;            // Queue as an ArrayList
+              ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:22: error: cannot find symbol
+    PriorityQueue<Vertex> pq;     // Queue as a PriorityQueue
+                  ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:85: error: cannot find symbol
+    private Vertex poll(ArrayList<Vertex> q) {
+                                  ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:85: error: cannot find symbol
+    private Vertex poll(ArrayList<Vertex> q) {
+            ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:50: error: cannot find symbol
+        pq.add(new Vertex(source, 0));
+                   ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:56: error: cannot find symbol
+            Vertex u = pq.poll();
+            ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:64: error: cannot find symbol
+            for (Edge v : graph[u.node]) {          // Visit all nodes "e" that v conects to
+                 ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:70: error: cannot find symbol
+                    pq.add(new Vertex(v.to, dist[v.to]));
+                               ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:90: error: cannot find symbol
+        Vertex sVertex = q.get(0);
+        ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:93: error: cannot find symbol
+            Vertex v = q.get(i);
+            ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:130: error: cannot find symbol
+        ArrayList<LinkedList<Edge>> graph2 = new ArrayList<>();
+                             ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:137: error: cannot find symbol
+                LinkedList<Edge> al = new LinkedList<>();
+                           ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:143: error: cannot find symbol
+                    al.add(new Edge(to, w));
+                               ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:181: error: cannot find symbol
+                graph[from].add(new Edge(to, w));
+                                    ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:2: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:2: error: semanticdb-javac: unknown flag 'II/Dijkstra'
+import java.io.File;
+^
+Note: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+17 errors
+2023.05.08 12:09:01 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/Dijkstra/Main.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Main.java:18: error: cannot find symbol
+        Dijkstra dijkstra = new Dijkstra("graphNew.txt", "new");
+        ^
+  symbol:   class Dijkstra
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Main.java:18: error: cannot find symbol
+        Dijkstra dijkstra = new Dijkstra("graphNew.txt", "new");
+                                ^
+  symbol:   class Dijkstra
+  location: class Main
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Main.java:2: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.util.Arrays;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Main.java:2: error: semanticdb-javac: unknown flag 'II/Dijkstra'
+import java.util.Arrays;
+^
+4 errors
+2023.05.08 12:09:01 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Vertex.java
+2023.05.08 12:09:01 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/Dijkstra/Vertex.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Vertex.java:7: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Vertex implements Comparable<Vertex> {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Vertex.java:7: error: semanticdb-javac: unknown flag 'II/Dijkstra'
+public class Vertex implements Comparable<Vertex> {
+^
+2 errors
+2023.05.08 12:13:07 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Edge.java
+2023.05.08 12:13:07 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/Dijkstra/Edge.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Edge.java:6: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+public class Edge {
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Edge.java:6: error: semanticdb-javac: unknown flag 'II/Dijkstra'
+public class Edge {
+^
+2 errors
+2023.05.08 12:14:11 WARN  no build target for: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java
+2023.05.08 12:14:12 WARN  Running javac-semanticdb failed for file:///Users/kevin/Documents/3er%20Semestre/DatosYAlgoritmos%20II/Dijkstra/Dijkstra.java. Output:
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:19: error: cannot find symbol
+    LinkedList<Edge>[] graph; // Graph
+               ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:22: error: cannot find symbol
+    ArrayList<Vertex> q; // Queue as an ArrayList
+              ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:23: error: cannot find symbol
+    PriorityQueue<Vertex> pq; // Queue as a PriorityQueue
+                  ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:88: error: cannot find symbol
+    private Vertex poll(ArrayList<Vertex> q) {
+                                  ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:88: error: cannot find symbol
+    private Vertex poll(ArrayList<Vertex> q) {
+            ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:53: error: cannot find symbol
+        pq.add(new Vertex(source, 0));
+                   ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:59: error: cannot find symbol
+            Vertex u = pq.poll();
+            ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:67: error: cannot find symbol
+            for (Edge v : graph[u.node]) { // Visit all nodes "e" that v conects to
+                 ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:73: error: cannot find symbol
+                    pq.add(new Vertex(v.to, dist[v.to]));
+                               ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:93: error: cannot find symbol
+        Vertex sVertex = q.get(0);
+        ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:96: error: cannot find symbol
+            Vertex v = q.get(i);
+            ^
+  symbol:   class Vertex
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:134: error: cannot find symbol
+        ArrayList<LinkedList<Edge>> graph2 = new ArrayList<>();
+                             ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:141: error: cannot find symbol
+                LinkedList<Edge> al = new LinkedList<>();
+                           ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:147: error: cannot find symbol
+                    al.add(new Edge(to, w));
+                               ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:185: error: cannot find symbol
+                graph[from].add(new Edge(to, w));
+                                    ^
+  symbol:   class Edge
+  location: class Dijkstra
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:2: error: semanticdb-javac: unknown flag 'Semestre/DatosYAlgoritmos'
+import java.io.File;
+^
+/Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java:2: error: semanticdb-javac: unknown flag 'II/Dijkstra'
+import java.io.File;
+^
+Note: /Users/kevin/Documents/3er Semestre/DatosYAlgoritmos II/Dijkstra/Dijkstra.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+17 errors
+2023.05.08 12:14:40 INFO  Shutting down server
+2023.05.08 12:14:40 INFO  shutting down Metals
+2023.05.08 12:14:40 INFO  Exiting server
