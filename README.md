@@ -33,8 +33,10 @@ Mainly, you will find data related with programming courses. However, in some co
     ├── 4-semester
     │   ├── Linear-Algebra
     │   └── Switching-Theory
-    └── 6-semester
-        └── Numerical-Analysis
+    ├── 6-semester
+    │   └── Numerical-Analysis
+    └── others
+        └── Computational-Thinking-NFI
 --------
 
 ## Motivation
