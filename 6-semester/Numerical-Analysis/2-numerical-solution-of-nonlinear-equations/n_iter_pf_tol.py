@@ -1,0 +1,16 @@
+import math
+print("x0")
+x0 = float(input())
+print("g_prim")
+g_prim = float(input())
+print("a")
+a = float(input())
+print("b")
+b = float(input())
+print("k")
+k = float(input())
+print("tol")
+tol = float(input())
+
+n = (math.log(tol/max(x0-a, b-x0)))/(math.log(k))
+print(n)
