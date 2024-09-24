@@ -4,7 +4,7 @@ import sympy as sp
 x = sp.Symbol('x')
 
 # Definir la función
-f = x**4 - 7*x**3 + 16*x**2 - 12*x
+f = x**4 - 5*x**3 + 6*x**2
 
 # Calcular la derivada de la función
 f_prime = sp.diff(f, x)

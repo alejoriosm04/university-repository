@@ -2,10 +2,10 @@ import math
 
 # Definir la función f(x)
 def f(x):
-    return (math.exp(x) / x) + 3
+    return math.exp(-2*x+6)+ math.log(x)-6
 
 # Implementar el método de la regla falsa
-def regla_falsa(a, b, tol=1e-7, max_iter=100):
+def regla_falsa(a, b, tol=5e-4, max_iter=100):
     if f(a) * f(b) >= 0:
         print("El método de la regla falsa no es aplicable en este intervalo.")
         return None
@@ -32,8 +32,8 @@ def regla_falsa(a, b, tol=1e-7, max_iter=100):
     return None, xm_values
 
 # Definir el intervalo [a, b]
-a = -2
-b = -0.1
+a = 0.1
+b = 9
 
 # Ejecutar el método de la regla falsa
 raiz, xm_values = regla_falsa(a, b)

@@ -1,7 +1,7 @@
 # Valores dados
-xn = 4.53640365
-xn_1 = 4.53640366
-xn_2 = 4.53679122
+xn = -1.85718386
+xn_1 = -1.85718389
+xn_2 = -1.85748754
 
 # Calcular la constante de error asintótico
 C = abs((xn - xn_1) / (xn_1 - xn_2)**1.62)
